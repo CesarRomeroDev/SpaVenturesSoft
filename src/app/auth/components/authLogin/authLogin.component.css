@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+.difuminado {
+  height: 70vh; /* Para ocupar toda la pantalla */
+  background: linear-gradient(to bottom, #0066cb, #0066cb, #ffffff);
+}
+
+.difuminado-modal{
+  height: 80vh; /* Para ocupar toda la pantalla */
+  background: linear-gradient(to bottom, #0066cb, #0066cb, #ffffff);
+}

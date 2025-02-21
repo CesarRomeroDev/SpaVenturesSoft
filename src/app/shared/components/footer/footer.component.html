@@ -1,0 +1,47 @@
+<div class="difuminado">
+  <div class="row justify-content-center">
+    <div class="col-9 text-center">
+      <h3 style="color: white;">Unlock the full power of</h3>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-11 text-center">
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+          @for (brandsFooter of brandsFooters; track $index) {
+            <div  iv class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ brandsFooter['descripción'] }}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-9 text-center">
+      <button type="button" class="btn btn-primary">
+        LINK YOUR CARD
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-arrow-badge-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 6l-.112 .006a1 1 0 0 0 -.669 1.619l3.501 4.375l-3.5 4.375a1 1 0 0 0 .78 1.625h6a1 1 0 0 0 .78 -.375l4 -5a1 1 0 0 0 0 -1.25l-4 -5a1 1 0 0 0 -.78 -.375h-6z" /></svg>
+      </button>
+    </div>
+  </div>
+</div>
+<br>
+<div style="background-color: gainsboro; margin-top: 60px; padding: 60px 60px;" class="row justify-content-center">
+  <div class="col-5 text-center">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <p><a href="#" class="link-underline-dark">Lorem</a></p>
+      <p><a href="#" class="link-underline-dark">consectetur</a></p>
+      <p><a href="#" class="link-underline-dark">nemo</a></p>
+      <p><a href="#" class="link-underline-dark">distinctio</a></p>
+    </div>
+  </div>
+</div>
+
+

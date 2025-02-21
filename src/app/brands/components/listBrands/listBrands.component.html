@@ -1,0 +1,100 @@
+<div class="row justify-content-center">
+  <div class="col-9 text-center">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">Featured Instant Coupons (200)</a>
+        <form class="d-flex">
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn btn-light btn-outline-secondary">
+              <span class="material-symbols-outlined">
+                gallery_thumbnail
+                </span>
+            </button>
+            <button type="button" class="btn btn btn-light btn-outline-secondary">
+              <span class="material-symbols-outlined">
+                gallery_thumbnail
+                </span>
+            </button>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn btn-light  btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                SORT BY
+              </button>
+              <ul class="dropdown-menu">
+                <li><a (click)="desc(brands, filters)" class="dropdown-item" style="cursor: pointer;">{{ textAscDesc() }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        @for (filter of filters; track $index) {
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ filter['descripción'] }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        }
+        @for (brand of brands; track $index) {
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{ brand['descripción'] }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <button (click)="this.loadBrands();" type="button" class="btn btn-light">MORE INSTANYT COUPONS</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ul>
+  @for (filter of filters; track $index) {
+    <li>
+      {{ filter['descripción'] }}
+    </li>
+  }
+</ul> -->
+
+<!-- <ul>
+  @for (brand of brands; track $index) {
+    <li>
+      {{ brand['descripción'] }}
+    </li>
+  }
+</ul> -->
+
