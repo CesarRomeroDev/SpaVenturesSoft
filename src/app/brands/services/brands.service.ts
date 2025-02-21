@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Brands, MenuItem } from '../interfaces/brands';
-import { envorinments } from '../../../environments/environments';
+import { envorinments } from '../../../environments/environment';
 import { catchError, map, Observable, of } from 'rxjs';
 
 const baseUrl = envorinments.baseUrlBrands;
